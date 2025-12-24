@@ -1,0 +1,64 @@
+.project-highlights {
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+  position: relative;
+}
+
+.highlights-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.highlights-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--text-white);
+  text-align: center;
+  margin-bottom: 4rem;
+  letter-spacing: -0.02em;
+}
+
+.highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.highlight-card {
+  background: rgba(45, 45, 45, 0.5);
+  padding: 2.5rem;
+  border-radius: 12px;
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  transition: all 0.3s ease;
+}
+
+.highlight-card:hover {
+  border-color: var(--golden);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
+}
+
+.highlight-card-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--golden);
+  margin-bottom: 1rem;
+}
+
+.highlight-card-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--text-gray);
+}
+
+@media (max-width: 768px) {
+  .highlights-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .highlights-title {
+    font-size: 2.5rem;
+  }
+}
+

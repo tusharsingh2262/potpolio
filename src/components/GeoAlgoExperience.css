@@ -1,0 +1,188 @@
+.geoalgo-experience {
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+  position: relative;
+}
+
+.experience-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.experience-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.experience-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--text-white);
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.experience-role {
+  font-size: 1.2rem;
+  color: var(--text-gray);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.project-item {
+  background: rgba(45, 45, 45, 0.5);
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.project-item:hover {
+  border-color: var(--golden);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
+}
+
+.project-number {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--golden);
+  opacity: 0.3;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.project-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-white);
+  margin-bottom: 1rem;
+}
+
+.project-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-gray);
+}
+
+.crm-deep-dive {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin-top: 4rem;
+  align-items: center;
+}
+
+.crm-visual {
+  position: relative;
+}
+
+.crm-dashboard {
+  background: #0a0a0a;
+  border: 2px solid #333;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+}
+
+.dashboard-header {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--golden);
+  margin-bottom: 1.5rem;
+}
+
+.dashboard-metrics {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.metric-card {
+  background: rgba(212, 175, 55, 0.1);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  padding: 1rem;
+  border-radius: 8px;
+  color: var(--golden);
+  font-weight: 600;
+  text-align: center;
+}
+
+.dashboard-charts {
+  display: flex;
+  gap: 1rem;
+  height: 100px;
+}
+
+.chart-bar {
+  flex: 1;
+  background: linear-gradient(to top, var(--golden) 0%, transparent 100%);
+  border-radius: 4px 4px 0 0;
+  opacity: 0.6;
+}
+
+.crm-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.crm-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-white);
+}
+
+.crm-subtitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--golden);
+}
+
+.crm-description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-gray);
+}
+
+.crm-tech, .crm-team {
+  margin-top: 1rem;
+}
+
+.tech-title, .team-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-white);
+  margin-bottom: 0.5rem;
+}
+
+.tech-stack, .team-info {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-gray);
+}
+
+@media (max-width: 968px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .crm-deep-dive {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .experience-title {
+    font-size: 2.5rem;
+  }
+}
+
